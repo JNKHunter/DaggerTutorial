@@ -13,7 +13,7 @@ public class Car {
         this.engine = engine;
     }
 
-    public void accelerate(){
+    public void accelerate() {
         engine.work();
     }
 }

@@ -8,7 +8,7 @@ import javax.inject.Inject;
 public class CarApp {
 
     @Component(modules = JukeModule.class)
-    interface CarMakerComponent{
+    interface CarMakerComponent {
         Car maker();
     }
 

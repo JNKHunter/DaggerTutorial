@@ -7,7 +7,8 @@ import dagger.Provides;
 @Module
 public class FerrariModule {
 
-    @Provides static Engine provideEngine() {
+    @Provides
+    static Engine provideEngine() {
         return new V8();
     }
 
