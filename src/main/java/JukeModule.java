@@ -5,10 +5,14 @@ import dagger.Provides;
  * Created by John on 10/12/16.
  */
 @Module
-public class JukeModule {
+public class JukeModule extends CarModule {
+
+    public JukeModule(long id) {
+        super(id);
+    }
 
     @Provides
-    static Engine provideEngine() {
+    public Engine provideEngine() {
         return new FourCylinder();
     }
 }

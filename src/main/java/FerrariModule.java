@@ -5,11 +5,14 @@ import dagger.Provides;
  * Created by John on 10/12/16.
  */
 @Module
-public class FerrariModule {
+public class FerrariModule extends CarModule {
 
-    @Provides
-    static Engine provideEngine() {
-        return new V8();
+    public FerrariModule(long id) {
+        super(id);
     }
 
+    @Provides
+    public Engine provideEngine() {
+        return new V8();
+    }
 }

@@ -14,7 +14,7 @@ public class CarApp {
 
 
     public static void main(String[] args) {
-        CarMakerComponent component = DaggerCarApp_CarMakerComponent.create();
+        CarMakerComponent component = DaggerCarApp_CarMakerComponent.builder().jukeModule(new JukeModule(1234)).build();
         Car car = component.maker();
         car.accelerate();
     }
